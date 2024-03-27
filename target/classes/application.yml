@@ -1,0 +1,42 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security?serverTimezone=Asia/Seoul
+    username: cos
+    password: cos1234
+    
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .mustache
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    format-sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 
+            client-secret:
+            scope:
+            - email
+            - profile
