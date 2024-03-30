@@ -12,4 +12,4 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 	// 실행하면 select * from user where username = ? 쿼리가 실행
 	public User findByUsername(String username); // JPA Query Method
 	
-}
+} 

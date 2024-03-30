@@ -24,7 +24,7 @@ import java.util.Map;
 public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
 	
 	@Autowired
-	private BCryptPasswordEncoder bCryptPasswordEncoder;
+	private BCryptPasswordEncoder bCryptPasswordEncoder; 
 	
 	@Autowired
 	private UserRepository userRepository;
