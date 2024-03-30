@@ -34,8 +34,8 @@ spring:
       client:
         registration:
           google: # /oauth2/authorization/google 이 주소를 동작하게 한다.
-            client-id:
-            client-secret:
+            client-id:     
+            client-secret:   
             scope:
               - email
               - profile
@@ -50,8 +50,8 @@ spring:
           # 네이버는 OAuth2.0 공식 지원대상이 아니라서 provider 설정이 필요하다.
           # 요청주소도 다르고, 응답 데이터도 다르기 때문이다.
           naver:
-            client-id: 
-            client-secret:
+            client-id: RUpWQkdeeLRarbdG0qFV
+            client-secret: _s0TjpzyFP
             scope:
               - name
               - email
